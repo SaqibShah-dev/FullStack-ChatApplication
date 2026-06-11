@@ -7,10 +7,15 @@ import { useEffect } from "react";
 import { useAuthStore } from "../store/useAuthStore";
 import { formatMessageTime } from "../lib/utils";
 
-
 const ChatContainer = () => {
-  const { messages, getMessages, isMessageLoading, selectedUser ,subscribeToMessages, unSubscribeFromMessages} =
-    useChatStore();
+  const {
+    messages,
+    getMessages,
+    isMessageLoading,
+    selectedUser,
+    subscribeToMessages,
+    unSubscribeFromMessages,
+  } = useChatStore();
   const { authUser } = useAuthStore();
 
   const messageEndRef = useRef(null);
@@ -21,13 +26,18 @@ const ChatContainer = () => {
     subscribeToMessages();
 
     return () => unSubscribeFromMessages();
-  }, [selectedUser._id, getMessages,subscribeToMessages,unSubscribeFromMessages]);
+  }, [
+    selectedUser._id,
+    getMessages,
+    subscribeToMessages,
+    unSubscribeFromMessages,
+  ]);
 
-  useEffect(()=> {
-    if(messageEndRef.current && messages){
-      messageEndRef.current.scrollIntoView({behavior:"smooth"});
+  useEffect(() => {
+    if (messageEndRef.current && messages) {
+      messageEndRef.current.scrollIntoView({ behavior: "smooth" });
     }
-  },[messages]);
+  }, [messages]);
 
   if (isMessageLoading) {
     return (
@@ -70,7 +80,11 @@ const ChatContainer = () => {
             </div>
             <div className="chat-bubble flex flex-col">
               {message.image && (
-                <img src = {message.image} alt="Attachment" className="sm:max-w-[200] rounded-mb-2"/>
+                <img
+                  src={message.image}
+                  alt="Attachment"
+                  className="sm:max-w-[200] rounded-mb-2"
+                />
               )}
               {message.text && <p>{message.text}</p>}
             </div>

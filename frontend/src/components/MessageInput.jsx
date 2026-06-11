@@ -34,6 +34,7 @@ const MessageInput = () => {
       await sendMessages({
         text: text.trim(),
         image: imagePreview,
+        createdAt: new Date().toISOString(),
       });
 
       setText("");
