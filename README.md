@@ -37,15 +37,17 @@ A full-stack, real-time chat application built with the MERN stack (MongoDB, Exp
 
 ## Screenshots
 
-*(Add screenshots of your application here before uploading to GitHub!)*
+Here are some glimpses of the Chatty application in action:
 
-### Login Interface
-> ![Login Screen Placeholder](https://via.placeholder.com/800x400?text=Login+Screen+Screenshot)
-> *Sleek dark-themed login interface with email and password authentication.*
-
-### Main Chat Window
-> ![Chat Interface Placeholder](https://via.placeholder.com/800x400?text=Main+Chat+Screenshot)
-> *Real-time chat interface featuring searchable contact lists, online status indicators, and clean message panes.*
+<div align="center">
+  <img src="./images/Screenshot_11-6-2026_72431_localhost.jpeg" width="48%" alt="App Screenshot 1" />
+  <img src="./images/Screenshot_11-6-2026_72458_localhost.jpeg" width="48%" alt="App Screenshot 2" />
+  <img src="./images/Screenshot_11-6-2026_72519_localhost.jpeg" width="48%" alt="App Screenshot 3" />
+  <img src="./images/Screenshot_11-6-2026_72542_localhost.jpeg" width="48%" alt="App Screenshot 4" />
+  <img src="./images/Screenshot_11-6-2026_72624_localhost.jpeg" width="48%" alt="App Screenshot 5" />
+  <img src="./images/Screenshot_11-6-2026_7269_localhost.jpeg" width="48%" alt="App Screenshot 6" />
+  <img src="./images/185ce314-735a-41b4-95bb-7d1681f70c28.jpg" width="48%" alt="App Screenshot 7" />
+</div>
 
 ## Getting Started
 
